@@ -12,6 +12,8 @@ const FutureRoadmap = () => {
 
       <section className="flex sm:hidden flex-col gap-2">
         <MobileRoadmapCard>
+          <div>hello</div>
+          <div>hello</div>
         </MobileRoadmapCard>
         {/* <MobileRoadmapCard />
         <MobileRoadmapCard /> */}
