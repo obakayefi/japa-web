@@ -22,7 +22,7 @@ export const GlowingStarsBackgroundCard = ({
         setMouseEnter(false);
       }}
       className={cn(
-        "bg-[linear-gradient(110deg,#333_0.6%,#222)] p-4  max-h-[20rem] h-full w-full rounded-xl border border-[#eaeaea] dark:border-neutral-600",
+        "bg-[linear-gradient(110deg,#fff_0.6%,#fff)] p-4  max-h-[20rem] h-full w-full rounded-xl  dark:border-neutral-600",
         className
       )}
     >
@@ -42,7 +42,7 @@ export const GlowingStarsDescription = ({
   children?: React.ReactNode;
 }) => {
   return (
-    <p className={cn("text-base text-green-300 w-full", className)}>
+    <p className={cn("text-base text-[#333] w-full", className)}>
       {children}
     </p>
   );
@@ -56,7 +56,7 @@ export const GlowingStarsTitle = ({
   children?: React.ReactNode;
 }) => {
   return (
-    <h2 className={cn("font-bold text-2xl text-[#eaeaea]", className)}>
+    <h2 className={cn("font-bold text-lg text-center text-[#333]/50", className)}>
       {children}
     </h2>
   );
@@ -103,7 +103,7 @@ export const Illustration = ({ mouseEnter }: { mouseEnter: boolean }) => {
               isGlowing={mouseEnter ? true : isGlowing}
               delay={mouseEnter ? staticDelay : delay}
             />
-            {mouseEnter && <Glow delay={staticDelay} />}
+            {/* {mouseEnter && <Glow delay={staticDelay} />} */}
             <AnimatePresence mode="wait">
               {isGlowing && <Glow delay={delay} />}
             </AnimatePresence>

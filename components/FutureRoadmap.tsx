@@ -3,13 +3,23 @@ import { AnimatePresence, motion } from 'motion/react';
 import React from 'react'
 import { CanvasRevealEffect } from './ui/canvas-reveal-effect';
 import SectionTitle from './SectionTitle';
+import { MobileRoadmapCard } from './MobileRoadmapCard';
 
 const FutureRoadmap = () => {
   return (
     <div id='futureRoadmap' className='text-black mt-10 px-20'>
       <SectionTitle title="FUTURE ROADMAP" />
 
-      <section className='flex flex-col sm:flex-row gap-4 mt-10'>
+      <section className="flex sm:hidden flex-col gap-2">
+        <MobileRoadmapCard>
+          <div>hello</div>
+          <div>hello</div>
+        </MobileRoadmapCard>
+        {/* <MobileRoadmapCard />
+        <MobileRoadmapCard /> */}
+      </section>
+
+      <section className='hidden sm:flex sm:flex-row gap-4 mt-10'>
         <Card title="Brand-sponsored rooms and cultural skins" icon={<AceternityIcon />}>
           <CanvasRevealEffect
             animationSpeed={5.1}
