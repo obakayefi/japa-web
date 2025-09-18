@@ -22,7 +22,7 @@ const HowItWorks = () => {
               height={200}
             />
             <section className='mt-6'>
-              <h3 className='text-3xl'>Pick house</h3>
+              <h3 className='text-3xl text-orange-400'>Pick house</h3>
               <p>Enter a house to see a collection of rooms you can join</p>
             </section>
           </section>
@@ -37,7 +37,7 @@ const HowItWorks = () => {
               height={200}
             />
             <section className='mt-6'>
-              <h3 className='text-3xl'>Enter room</h3>
+              <h3 className='text-3xl text-orange-400'>Enter room</h3>
               <p>Pay the room’s entrance fee to enter the room and start competing to dominate the leaderboard</p>
             </section>
           </section>
@@ -55,7 +55,7 @@ const HowItWorks = () => {
               height={400}
             />
             <section className='mt-6'>
-              <h3 className='text-3xl'>Compete</h3>
+              <h3 className='text-3xl text-orange-400'>Compete</h3>
               <p>Enter a house to see a collection of rooms you can join</p>
             </section>
           </section>
@@ -70,7 +70,7 @@ const HowItWorks = () => {
               height={200}
             />
             <section className='mt-6'>
-              <h3 className='text-3xl'>Get rewards</h3>
+              <h3 className='text-3xl text-orange-400'>Get rewards</h3>
               <p>If before the next payout window you are able to finish among the top 10 players rewards would be allotted to you</p>
             </section>
           </section>
